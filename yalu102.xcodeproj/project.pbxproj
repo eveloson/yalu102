@@ -15,7 +15,6 @@
 		EA9900EB1E1E9F060056FEBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9900EA1E1E9F060056FEBD /* AppDelegate.m */; };
 		EA9900EE1E1E9F060056FEBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9900ED1E1E9F060056FEBD /* ViewController.m */; };
 		EA9900F11E1E9F060056FEBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9900EF1E1E9F060056FEBD /* Main.storyboard */; };
-		EA9900F61E1E9F060056FEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9900F41E1E9F060056FEBD /* LaunchScreen.storyboard */; };
 		EA9901041E219C210056FEBD /* offsets.c in Sources */ = {isa = PBXBuildFile; fileRef = EA9901021E219C210056FEBD /* offsets.c */; };
 		EA9901061E219FF10056FEBD /* bootstrap.tar in Resources */ = {isa = PBXBuildFile; fileRef = EA9901051E219FF10056FEBD /* bootstrap.tar */; };
 		EA99010A1E21A04C0056FEBD /* tar in Resources */ = {isa = PBXBuildFile; fileRef = EA9901091E21A04C0056FEBD /* tar */; };
@@ -28,6 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44CBFA051FF334AE004C4DDA /* OSKext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSKext.h; sourceTree = "<group>"; };
+		44CBFA061FF334AF004C4DDA /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
+		44CBFA071FF334AF004C4DDA /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
+		44CBFA081FF334AF004C4DDA /* IOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKit.h; sourceTree = "<group>"; };
+		44CBFA091FF334AF004C4DDA /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		44CBFA0A1FF334AF004C4DDA /* IOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMessage.h; sourceTree = "<group>"; };
+		44CBFA0B1FF334AF004C4DDA /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
+		44CBFA0C1FF334AF004C4DDA /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMessageNotification.h; sourceTree = "<group>"; };
 		EA1A3B9B1E38BBDB009CA025 /* patchfinder64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = patchfinder64.h; sourceTree = "<group>"; };
 		EA1A3B9C1E391C4F009CA025 /* patchfinder64.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = patchfinder64.o; sourceTree = "<group>"; };
 		EA1A3BA61E398E33009CA025 /* 0.reload.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 0.reload.plist; sourceTree = "<group>"; };
@@ -40,7 +47,6 @@
 		EA9900EC1E1E9F060056FEBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EA9900ED1E1E9F060056FEBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA9900F01E1E9F060056FEBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EA9900F51E1E9F060056FEBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA9900F71E1E9F060056FEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA9901021E219C210056FEBD /* offsets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = offsets.c; sourceTree = "<group>"; };
 		EA9901031E219C210056FEBD /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
@@ -70,6 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44CBFA041FF334A1004C4DDA /* header */ = {
+			isa = PBXGroup;
+			children = (
+				44CBFA081FF334AF004C4DDA /* IOKit.h */,
+				44CBFA0B1FF334AF004C4DDA /* IOKitKeys.h */,
+				44CBFA091FF334AF004C4DDA /* IOKitLib.h */,
+				44CBFA0A1FF334AF004C4DDA /* IOMessage.h */,
+				44CBFA061FF334AF004C4DDA /* IOReturn.h */,
+				44CBFA071FF334AF004C4DDA /* IOTypes.h */,
+				44CBFA051FF334AE004C4DDA /* OSKext.h */,
+				44CBFA0C1FF334AF004C4DDA /* OSMessageNotification.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
 		EA9900DA1E1E9F060056FEBD = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +110,7 @@
 		EA9900E51E1E9F060056FEBD /* yalu102 */ = {
 			isa = PBXGroup;
 			children = (
+				44CBFA041FF334A1004C4DDA /* header */,
 				EAA7F7C61E3EE4AF00BE3C64 /* dropbear.plist */,
 				EA1A3B9B1E38BBDB009CA025 /* patchfinder64.h */,
 				EA9901021E219C210056FEBD /* offsets.c */,
@@ -101,7 +123,6 @@
 				EA9900EC1E1E9F060056FEBD /* ViewController.h */,
 				EA9900ED1E1E9F060056FEBD /* ViewController.m */,
 				EA9900EF1E1E9F060056FEBD /* Main.storyboard */,
-				EA9900F41E1E9F060056FEBD /* LaunchScreen.storyboard */,
 				EA9900F71E1E9F060056FEBD /* Info.plist */,
 				EA9901051E219FF10056FEBD /* bootstrap.tar */,
 				EA9901091E21A04C0056FEBD /* tar */,
@@ -157,7 +178,7 @@
 				TargetAttributes = {
 					EA9900E21E1E9F060056FEBD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = CGTX3WH3ZS;
+						DevelopmentTeam = 3PYKU7D6KZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -190,7 +211,6 @@
 				EA9901061E219FF10056FEBD /* bootstrap.tar in Resources */,
 				EA1A3BA81E398E33009CA025 /* 0.reload.plist in Resources */,
 				EAA7F7C71E3EE4AF00BE3C64 /* dropbear.plist in Resources */,
-				EA9900F61E1E9F060056FEBD /* LaunchScreen.storyboard in Resources */,
 				EA1A3BAD1E399006009CA025 /* reload in Resources */,
 				EA1A3BC51E39D1FF009CA025 /* Assets.xcassets in Resources */,
 				EA9900F11E1E9F060056FEBD /* Main.storyboard in Resources */,
@@ -222,14 +242,6 @@
 				EA9900F01E1E9F060056FEBD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EA9900F41E1E9F060056FEBD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA9900F51E1E9F060056FEBD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -337,7 +349,7 @@
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				DEVELOPMENT_TEAM = CGTX3WH3ZS;
+				DEVELOPMENT_TEAM = 3PYKU7D6KZ;
 				INFOPLIST_FILE = yalu102/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -356,7 +368,7 @@
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				DEVELOPMENT_TEAM = CGTX3WH3ZS;
+				DEVELOPMENT_TEAM = 3PYKU7D6KZ;
 				INFOPLIST_FILE = yalu102/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
